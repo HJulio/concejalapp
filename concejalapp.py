@@ -9,7 +9,7 @@ from werkzeug import secure_filename
 app = Flask(__name__)
 
 
-ETA_words = ['ETA', 'eta', 'matar', 'Cifuentes', 'judo', 'Israel', 'bomba', 'bombas',]
+ETA_words = ['ETA', 'eta', 'matar', 'Cifuentes', 'judio', 'Israel', 'bomba', 'bombas', 'Aguirre', 'Podemos']
 
 
 ETA_tweets = []
