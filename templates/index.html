@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Concejalapp</h3>
+      </div>
+      <hr/>
+      {% block body %}
+        <div>
+            <p class="lead">Sube tu historial de Twitter (formato json) y te diremos qué tweets tienes que eliminar para
+                poder ser concejal</p>
+            <!-- Lista con los pasos para obtener el JSON --></div>
+        <div>
+        </div>
+
+
+        <div>
+      
+      <form action="upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br /><br />
+        <input class="btn btn-primary" type="submit" value="¡Al ayuntamiento!">
+      </form>
+      </div>
+      {% endblock %}
+    </div>
+  </body>
+</html>

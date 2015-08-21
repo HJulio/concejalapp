@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block body %}
+        <div>
+            <p class="lead">Aquí tienes la lista de tweets que podrían convertirte en terrorista, obligarte a dimitir
+            o salir en la portada de La Razón</p>
+        </div>
+        <div>
+            <dl>
+              {% for key, value in ETA_dic.iteritems() %}
+                    <dt><a href="http://twitter.com/u/status/{{ key }}">ID: {{ key }}</a> </dt>
+                    <dd>{{ value.decode('utf-8') }}</dd>
+              {% endfor %}
+            </dl>
+        </div>
+{% endblock %}
