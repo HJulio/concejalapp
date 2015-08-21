@@ -12,10 +12,14 @@
       <hr/>
       {% block body %}
         <div>
-            <p class="lead">Sube tu historial de Twitter (formato json) y te diremos qué tweets tienes que eliminar para
+            <p class="lead">Sube tu historial de Twitter (formato csv) y te diremos qué tweets tienes que eliminar para
                 poder ser concejal</p>
-            <!-- Lista con los pasos para obtener el JSON --></div>
-        <div>
+            <ol>
+             <li>Entra en <a href="https://twitter.com/settings/account">https://twitter.com/settings/account</a> </li>
+             <li>Solicita tu archivo de twitter (te llegará un mail cuando esté disponible)</li>
+             <li>Extrae los archivos del .zip y sube tu <strong>tweets.csv<strong></li>
+            </ol>
+
         </div>
 
 
@@ -27,6 +31,13 @@
       </form>
       </div>
       {% endblock %}
+
     </div>
   </body>
+
+  <footer class="footer">
+          <div class="container text-center">
+            <p class="text-muted credit"></html><a href="https://github.com/HJulio/concejalapp">H</a> - 2015</p>
+          </div>
+
 </html>
