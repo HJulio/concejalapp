@@ -26,7 +26,6 @@ def process(file):
         for word in row[5].split():
             if word in ETA_words:
                 ETA_dic[row[0]] = row[5]
-                print (row[0] + "," + row[5]) #debug
                 break;
     return ETA_dic
 
@@ -59,7 +58,6 @@ def error():
 
 
 if __name__ == '__main__':
-    app.debug = True
     app.run(
         host="localhost"
     )
