@@ -2,20 +2,15 @@ __author__ = 'hjulio'
 # -*- coding: utf-8 -*-
 
 import csv
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory
-from werkzeug import secure_filename
-
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-
-ETA_words = ['ETA', 'eta', 'matar', 'Cifuentes', 'judio', 'Israel', 'bomba', 'bombas', 'Aguirre', 'Podemos']
-
-
-ETA_tweets = []
-
 # Allowed
 app.config['ALLOWED_EXTENSIONS'] = set(['csv'])
+
+
+ETA_words = ['ETA', 'eta', 'matar', 'Cifuentes', 'judio', 'Israel', 'bomba', 'bombas', 'Aguirre', 'Podemos' ]
 
 
 def process(file):
@@ -26,7 +21,7 @@ def process(file):
         for word in row[5].split():
             if word in ETA_words:
                 ETA_dic[row[0]] = row[5]
-                break;
+                break
     return ETA_dic
 
 
