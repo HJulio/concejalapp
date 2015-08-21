@@ -3,6 +3,8 @@
 
 Una forma fácil de ver si podrías ser concejal, tener algún problema en otros cargos públicos con tu cuenta de twitter o simplemente ver si escribes muchas burradas.
 
+http://concejalapp.azurewebsites.net/
+
 *Hecho con flask y poco más durante una mañana de verano.*
 
 
