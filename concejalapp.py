@@ -10,7 +10,8 @@ app = Flask(__name__)
 app.config['ALLOWED_EXTENSIONS'] = set(['csv'])
 
 
-ETA_words = ['ETA', 'eta', 'matar', 'Cifuentes', 'judio', 'Israel', 'bomba', 'bombas', 'Aguirre', 'Podemos' ]
+ETA_words = ['ETA', 'eta', 'matar', 'etarra', 'etarras', 'Cifuentes', 'judio', 'Israel',
+             'bomba', 'bombas', 'Aguirre', 'Podemos', 'Venezuela']
 
 
 def process(file):
